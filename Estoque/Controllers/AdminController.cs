@@ -37,8 +37,6 @@ namespace Estoque.Controllers
                     return View(model);
                 }
 
-                GarantirTabelaUsuarios();
-
                 var adminEmail = ConfigurationManager.AppSettings["AdminEmail"];
                 var storedHash = ConfigurationManager.AppSettings["AdminPasswordHash"];
 
@@ -51,6 +49,8 @@ namespace Estoque.Controllers
                     Session["EhAdminPrincipal"] = true;
                     return RedirectToAction("Index", "Produto");
                 }
+
+                GarantirTabelaUsuarios();
 
                 var email = model.Usuario.Trim().ToLower();
                 var senhaHash = SecurityHelper.HashSHA256(model.Senha ?? string.Empty);
