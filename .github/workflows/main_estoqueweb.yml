@@ -25,10 +25,10 @@ jobs:
         uses: NuGet/setup-nuget@v1.0.5
 
       - name: Restore NuGet packages
-        run: nuget restore
+        run: nuget restore EstoqueSupabase.sln
 
       - name: Publish to folder
-        run: msbuild /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="\published\"
+        run: msbuild Estoque\Estoque.csproj /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:Configuration=Release /p:_PackageTempDir="\published\"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -48,7 +48,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: ASP-app
-      
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -63,4 +63,3 @@ jobs:
           app-name: 'EstoqueWeb'
           slot-name: 'Production'
           package: .
-          
