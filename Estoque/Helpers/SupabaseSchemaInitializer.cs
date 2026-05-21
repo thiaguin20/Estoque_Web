@@ -1,4 +1,3 @@
-using System.Configuration;
 using System.Diagnostics;
 using Npgsql;
 
@@ -10,14 +9,7 @@ namespace Estoque.Helpers
         {
             try
             {
-                var connectionString = ConfigurationManager.ConnectionStrings["EstoqueContext"];
-
-                if (connectionString == null || connectionString.ProviderName != "Npgsql")
-                {
-                    return;
-                }
-
-                using (var connection = new NpgsqlConnection(connectionString.ConnectionString))
+                using (var connection = new NpgsqlConnection(SupabaseConnectionSettings.GetConnectionString()))
                 {
                     connection.Open();
 

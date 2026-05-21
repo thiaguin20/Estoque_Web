@@ -168,6 +168,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\SecurityHelper.cs" />
+    <Compile Include="Helpers\SupabaseConnectionSettings.cs" />
     <Compile Include="Helpers\SupabaseSchemaInitializer.cs" />
     <Compile Include="Migrations\202603252250092_Inicial.cs" />
     <Compile Include="Migrations\202603252250092_Inicial.Designer.cs">

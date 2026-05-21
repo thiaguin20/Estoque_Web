@@ -1,10 +1,17 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
+using Estoque.Helpers;
+using Npgsql;
 
 namespace Estoque.Models
 {
     public class EstoqueContext : DbContext
     {
+        public EstoqueContext()
+            : base(new NpgsqlConnection(SupabaseConnectionSettings.GetConnectionString()), true)
+        {
+        }
+
         public DbSet<Produto> Produtos { get; set; }
 
         public DbSet<Movimentacao> Movimentacoes { get; set; }
