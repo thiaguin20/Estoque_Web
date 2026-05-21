@@ -56,6 +56,10 @@ CREATE UNIQUE INDEX IF NOT EXISTS ""IX_Usuarios_Email"" ON public.""Usuarios"" (
             {
                 Trace.TraceError("Supabase schema initialization failed: " + ex);
             }
+            catch (System.Exception ex)
+            {
+                Trace.TraceError("Supabase schema initialization failed: " + ex);
+            }
         }
     }
 }
