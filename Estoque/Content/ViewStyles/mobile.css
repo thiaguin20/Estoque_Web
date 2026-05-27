@@ -291,6 +291,80 @@
     .produto {
         font-size: 22px !important;
     }
+
+    .tbl tbody tr {
+        display: grid !important;
+        grid-template-columns: 72px 1fr;
+        gap: 10px 12px;
+        align-items: start;
+        padding: 12px !important;
+    }
+
+    .tbl tbody td {
+        padding: 0 !important;
+        border-bottom: 0 !important;
+    }
+
+    .tbl tbody td[data-label="Foto"] {
+        grid-row: span 3;
+    }
+
+    .tbl tbody td[data-label="Foto"]::before,
+    .tbl tbody td[data-label="Produto"]::before {
+        display: none;
+    }
+
+    .tbl tbody td[data-label="Produto"] {
+        align-self: end;
+    }
+
+    .tbl tbody td[data-label="Quantidade"],
+    .tbl tbody td[data-label="Preço"] {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .tbl tbody td[data-label="Quantidade"]::before,
+    .tbl tbody td[data-label="Preço"]::before {
+        margin-bottom: 0;
+    }
+
+    .tbl tbody td[data-label="Ações"] {
+        grid-column: 1 / -1;
+        padding-top: 10px !important;
+        border-top: 1px solid var(--line, rgba(255, 255, 255, .08)) !important;
+    }
+
+    .tbl .thumb {
+        width: 72px !important;
+        height: 72px !important;
+        border-radius: 10px !important;
+        object-fit: cover;
+    }
+
+    .tbl .prod-name {
+        display: block;
+        font-size: 16px !important;
+        line-height: 1.2;
+    }
+
+    .tbl .price-val {
+        font-size: 14px !important;
+    }
+
+    .tbl .acts {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    .tbl .btn-act {
+        min-height: 40px;
+        padding: 0 8px !important;
+        border-radius: 8px !important;
+        font-size: 12px !important;
+        text-decoration: none;
+    }
 }
 
 @media (max-width: 420px) {
