@@ -217,6 +217,17 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Images\default.jfif" />
+    <Content Include="Content\ViewStyles\admin-cadastro.css" />
+    <Content Include="Content\ViewStyles\admin-login.css" />
+    <Content Include="Content\ViewStyles\produto-create.css" />
+    <Content Include="Content\ViewStyles\produto-delete.css" />
+    <Content Include="Content\ViewStyles\produto-edit.css" />
+    <Content Include="Content\ViewStyles\produto-entrada.css" />
+    <Content Include="Content\ViewStyles\produto-historicoentrada.css" />
+    <Content Include="Content\ViewStyles\produto-historicosaida.css" />
+    <Content Include="Content\ViewStyles\produto-index.css" />
+    <Content Include="Content\ViewStyles\produto-saida.css" />
+    <Content Include="Content\ViewStyles\usuarios-index.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
