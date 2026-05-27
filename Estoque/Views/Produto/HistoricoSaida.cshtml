@@ -13,6 +13,7 @@
     <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" />
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" />
     <link href="@Url.Content("~/Content/ViewStyles/produto-historicosaida.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/ViewStyles/mobile.css")" rel="stylesheet" />
 
 
 </head>
@@ -33,9 +34,9 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>@item.NomeProduto</td>
-                <td class="red">-@item.Quantidade</td>
-                <td>@item.Data</td>
+                <td data-label="Produto">@item.NomeProduto</td>
+                <td class="red" data-label="Quantidade">-@item.Quantidade</td>
+                <td data-label="Data">@item.Data</td>
             </tr>
         }
 

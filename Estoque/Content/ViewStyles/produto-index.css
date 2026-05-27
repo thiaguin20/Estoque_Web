@@ -688,7 +688,7 @@
             line-height: 1.7;
         }
 
-        @@media (max-width: 900px) {
+        @media (max-width: 900px) {
             .shell {
                 grid-template-columns: 1fr;
             }
@@ -702,7 +702,7 @@
             }
         }
 
-        @@media (max-width: 600px) {
+        @media (max-width: 600px) {
             .stats {
                 grid-template-columns: 1fr;
             }

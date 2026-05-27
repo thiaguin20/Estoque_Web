@@ -219,6 +219,7 @@
     <Content Include="Content\Images\default.jfif" />
     <Content Include="Content\ViewStyles\admin-cadastro.css" />
     <Content Include="Content\ViewStyles\admin-login.css" />
+    <Content Include="Content\ViewStyles\mobile.css" />
     <Content Include="Content\ViewStyles\produto-create.css" />
     <Content Include="Content\ViewStyles\produto-delete.css" />
     <Content Include="Content\ViewStyles\produto-edit.css" />

@@ -1,0 +1,315 @@
+@media (max-width: 768px) {
+    html,
+    body {
+        min-width: 0;
+        overflow-x: hidden;
+    }
+
+    body {
+        padding: 0;
+    }
+
+    .shell {
+        display: block !important;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .sidebar {
+        display: flex !important;
+        flex-direction: column !important;
+        position: static !important;
+        top: auto !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 16px !important;
+        border-right: 0 !important;
+        border-bottom: 1px solid var(--line, rgba(255, 255, 255, .1)) !important;
+        gap: 14px !important;
+    }
+
+    .brand {
+        align-items: center;
+        margin-bottom: 4px;
+    }
+
+    .brand-icon {
+        width: 38px !important;
+        height: 38px !important;
+    }
+
+    .nav-stack {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px !important;
+    }
+
+    .nav-label {
+        grid-column: 1 / -1;
+        margin: 8px 0 0 !important;
+        padding: 0 !important;
+    }
+
+    .nav-item {
+        min-height: 44px;
+        justify-content: flex-start;
+        padding: 10px !important;
+        font-size: 12px !important;
+        line-height: 1.25;
+        white-space: normal;
+    }
+
+    .sidebar-foot {
+        margin-top: 6px !important;
+        padding-top: 10px !important;
+    }
+
+    .settings-panel {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .main {
+        display: block !important;
+        min-width: 0 !important;
+        overflow: visible !important;
+    }
+
+    .topbar,
+    .top {
+        position: static !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+        padding: 14px 16px !important;
+    }
+
+    .search-form {
+        display: grid !important;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        width: 100% !important;
+        max-width: none !important;
+        gap: 8px !important;
+    }
+
+    .topbar-search {
+        width: 100% !important;
+        max-width: none !important;
+    }
+
+    .topbar-search input,
+    .field input,
+    .field textarea,
+    .field select,
+    input,
+    select,
+    textarea {
+        max-width: none !important;
+        width: 100% !important;
+    }
+
+    .btn-new,
+    .btn-back,
+    .btn-submit,
+    .btn-cancel,
+    .btn-confirm-del {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .content,
+    .main {
+        padding: 18px 16px !important;
+        width: 100% !important;
+    }
+
+    .topbar + .content {
+        padding-top: 18px !important;
+    }
+
+    .hero {
+        margin-bottom: 18px !important;
+    }
+
+    .hero h1,
+    h1 {
+        max-width: 100%;
+        font-size: clamp(28px, 9vw, 40px) !important;
+        line-height: 1.08 !important;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-eyebrow,
+    .eyebrow,
+    .topbar-title {
+        font-size: 11px !important;
+    }
+
+    .stats {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+        overflow: visible !important;
+    }
+
+    .stat {
+        min-width: 0 !important;
+        width: auto !important;
+        padding: 14px !important;
+    }
+
+    .stat-num {
+        font-size: 24px !important;
+        overflow-wrap: anywhere;
+    }
+
+    .filter-bar {
+        display: flex !important;
+        flex-wrap: wrap;
+        gap: 8px !important;
+    }
+
+    .pill {
+        min-height: 36px;
+        font-size: 12px !important;
+    }
+
+    .card,
+    .tcard,
+    .form-card,
+    .delete-card {
+        width: 100% !important;
+        max-width: none !important;
+        border-radius: 12px !important;
+        overflow: hidden !important;
+    }
+
+    .tcard-head {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 8px;
+    }
+
+    .form-grid,
+    .delete-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 18px !important;
+    }
+
+    .form-actions,
+    .actions {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+
+    .img-box,
+    .preview-box {
+        width: 100% !important;
+    }
+
+    .table-scroll {
+        width: 100% !important;
+        overflow-x: visible !important;
+    }
+
+    table,
+    .tbl {
+        width: 100% !important;
+        min-width: 0 !important;
+        border-collapse: separate !important;
+        border-spacing: 0 10px !important;
+        background: transparent !important;
+    }
+
+    thead,
+    tr:has(th) {
+        display: none !important;
+    }
+
+    tbody,
+    tr,
+    td {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    tr {
+        margin-bottom: 12px;
+        padding: 12px;
+        border: 1px solid var(--line2, rgba(255, 255, 255, .12));
+        border-radius: 12px;
+        background: var(--bg2, #141414);
+    }
+
+    td {
+        padding: 8px 0 !important;
+        border: 0 !important;
+        border-bottom: 1px solid var(--line, rgba(255, 255, 255, .08)) !important;
+        text-align: left !important;
+    }
+
+    td:last-child {
+        border-bottom: 0 !important;
+    }
+
+    td[data-label]::before {
+        content: attr(data-label);
+        display: block;
+        margin-bottom: 4px;
+        color: var(--txt3, #9a9690);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+    }
+
+    .thumb {
+        width: 64px !important;
+        height: 64px !important;
+    }
+
+    .acts {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px !important;
+        width: 100%;
+    }
+
+    .btn-act,
+    .action {
+        width: 100%;
+        min-height: 38px;
+        justify-content: center;
+    }
+
+    .produto {
+        font-size: 22px !important;
+    }
+}
+
+@media (max-width: 420px) {
+    .nav-stack,
+    .stats,
+    .acts {
+        grid-template-columns: 1fr !important;
+    }
+
+    .search-form {
+        grid-template-columns: 1fr;
+    }
+
+    .content,
+    .main,
+    .sidebar,
+    .topbar,
+    .top {
+        padding-left: 14px !important;
+        padding-right: 14px !important;
+    }
+}
