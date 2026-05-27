@@ -412,3 +412,53 @@
         padding-right: 14px !important;
     }
 }
+
+@media (max-width: 768px) {
+    .tbl tbody td:nth-child(1) {
+        grid-row: span 3;
+    }
+
+    .tbl tbody td:nth-child(1)::before,
+    .tbl tbody td:nth-child(2)::before {
+        display: none !important;
+    }
+
+    .tbl tbody td:nth-child(2) {
+        align-self: end;
+    }
+
+    .tbl tbody td:nth-child(3),
+    .tbl tbody td:nth-child(4) {
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .tbl tbody td:nth-child(3)::before,
+    .tbl tbody td:nth-child(4)::before {
+        margin-bottom: 0 !important;
+    }
+
+    .tbl tbody td:nth-child(5) {
+        grid-column: 1 / -1 !important;
+        padding-top: 10px !important;
+        border-top: 0 !important;
+    }
+
+    .tbl tbody td:nth-child(5)::before {
+        margin-bottom: 8px !important;
+    }
+
+    .tbl .acts {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 8px !important;
+        justify-content: stretch !important;
+        width: 100% !important;
+    }
+
+    .tbl .btn-act {
+        width: 100% !important;
+    }
+}
