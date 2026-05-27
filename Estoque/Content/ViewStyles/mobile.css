@@ -298,11 +298,30 @@
         gap: 10px 12px;
         align-items: start;
         padding: 12px !important;
+        border-bottom: 1px solid var(--line2, rgba(255, 255, 255, .12)) !important;
+        overflow: hidden;
+    }
+
+    .tbl tbody tr:last-child {
+        border-bottom: 1px solid var(--line2, rgba(255, 255, 255, .12)) !important;
+    }
+
+    .tbl tbody tr:hover {
+        background: var(--bg2, #141414) !important;
     }
 
     .tbl tbody td {
         padding: 0 !important;
         border-bottom: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
+        box-shadow: none !important;
+    }
+
+    .tbl tbody td.r,
+    .tbl tbody td.c,
+    .tbl tbody td.no-clip {
+        text-align: left !important;
     }
 
     .tbl tbody td[data-label="Foto"] {
@@ -334,7 +353,11 @@
     .tbl tbody td[data-label="Ações"] {
         grid-column: 1 / -1;
         padding-top: 10px !important;
-        border-top: 1px solid var(--line, rgba(255, 255, 255, .08)) !important;
+        border-top: 0 !important;
+    }
+
+    .tbl tbody td[data-label="Ações"]::before {
+        margin-bottom: 8px;
     }
 
     .tbl .thumb {
