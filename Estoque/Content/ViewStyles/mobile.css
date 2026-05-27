@@ -299,7 +299,7 @@
         align-items: start;
         padding: 12px !important;
         border-bottom: 1px solid var(--line2, rgba(255, 255, 255, .12)) !important;
-        overflow: hidden;
+        overflow: visible;
     }
 
     .tbl tbody tr:last-child {
@@ -316,6 +316,8 @@
         border-left: 0 !important;
         border-right: 0 !important;
         box-shadow: none !important;
+        min-width: 0 !important;
+        width: auto !important;
     }
 
     .tbl tbody td.r,
