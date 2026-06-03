@@ -119,7 +119,7 @@
                             <span class="stat-tag">Valor em Estoque</span>
                             <div class="stat-ico green"><i class="bi bi-wallet2"></i></div>
                         </div>
-                        <div class="stat-num stat-num-lg">R$&nbsp;@Model.Sum(p => p.Preco).ToString("N0")</div>
+                        <div class="stat-num stat-num-lg">R$&nbsp;@Model.Sum(p => p.Preco * p.Quantidade).ToString("N0")</div>
                     </div>
                     <div class="stat s-red">
                         <div class="stat-top">
